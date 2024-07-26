@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Prediction</title>
+</head>
+<body style="background-color: rgb(20, 197, 170);" >
+    <div style="text-align: center;">
+    
+    <h1>Get your Insurance Premium Charges Prediction</h1>
+    <hr><br><br>
+    <form action="{{ url_for('data') }}" method="post">
+        <label for="region"> <b>Region :-</b></label>
+        <select name="region">
+            <option value="southeast">southeast</option>
+            <option value="southwest">southwest</option>
+            <option value="northeast">northeast</option>
+            <option value="northwest">northwest</option>
+        </select><br><br>
+        <label for="Children"> <b>Children :-</b> </label>
+        <select name="Children" id="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+        <label for="Health"><b>Health :-</b></label>
+        <select name="Health" id="">
+            <option value="1">Underweight</option>
+            <option value="2">Healthy</option>
+            <option value="3">Overweight</option>
+            <option value="4">Obese</option>
+        </select><br><br>
+        <label for="sex"><b>Sex :-</b></label>
+        <select name="sex" id="">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br><br>
+        <label for="smoker"><b>Smoker :- </b></label>
+        <select name="smoker" id="">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br><br>
+        <label for="Age"><b>Age :- </b></label>
+        <input type="number" name="Age" id=""><br><br>
+        <label for="bmi"><b>BMI :-</b></label>
+        <input type="number" name="bmi"><br><br>
+        <button type="submit"><b>SUBMIT</b></button>
+    </form>
+</div>
+</body>
+</html>
